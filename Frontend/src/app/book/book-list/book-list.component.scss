@@ -1,0 +1,72 @@
+// Toolbar
+.book-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2196f3;
+  color: white;
+  padding: 0.5rem 1rem;
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.container {
+  padding: 1rem;
+}
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  margin-top: 2rem;
+
+  mat-icon {
+    font-size: 48px;
+    color: #bbb;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.book-card {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  mat-card-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.grid-container {
+  mat-grid-list {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .grid-container mat-grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .grid-container mat-grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-container mat-grid-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

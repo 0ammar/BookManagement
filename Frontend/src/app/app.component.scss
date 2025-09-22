@@ -1,0 +1,40 @@
+/* --- Colors --- */
+$primary: #2196f3;
+$dark: #0d47a1;
+$light: #e3f2fd;
+$text: #555;
+
+body {
+  background: $light;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.book-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+.container {
+  padding: 1rem;
+
+  .mat-progress-bar {
+    margin-bottom: 1rem;
+  }
+
+  .empty-state {
+    text-align: center;
+    color: $text;
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    mat-icon {
+      font-size: 4rem;
+      color: $primary;
+    }
+  }
+}

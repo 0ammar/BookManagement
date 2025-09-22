@@ -1,0 +1,92 @@
+.container {
+  padding: 1rem;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.category-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: var(--primary-color);
+}
+
+.toolbar-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.spacer { flex: 1; }
+
+.add-button {
+  transition: transform 0.3s ease;
+}
+.add-button:hover { transform: scale(1.1); }
+
+.empty-state {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.empty-state mat-icon {
+  font-size: 48px;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.category-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin-top: 1.5rem;
+}
+
+.category-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+mat-card-content {
+  font-weight: 600;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+mat-card-actions button mat-icon {
+  transition: transform 0.2s ease;
+}
+
+mat-card-actions button .edit-icon {
+  color: #1976d2;
+}
+mat-card-actions button .delete-icon {
+  color: #e53935;
+}
+
+mat-card-actions button:hover mat-icon {
+  transform: scale(1.1);
+}
+button {
+  padding: 5px;
+  background-color: transparent;
+}

@@ -1,0 +1,30 @@
+<mat-toolbar class="category-toolbar">
+  <span class="toolbar-title">Categories</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="add-button" (click)="openForm()" aria-label="Add Category">
+    <mat-icon>add_circle_outline</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="container">
+  <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+
+  <div *ngIf="!loading && categories.length === 0" class="empty-state">
+    <mat-icon>category</mat-icon>
+    <p>No categories found. Click "+" to add one.</p>
+  </div>
+
+  <div *ngIf="!loading && categories.length > 0" class="category-grid">
+    <mat-card *ngFor="let category of categories" class="category-card" [routerLink]="['/books', category.id, category.name]" matRipple>
+      <mat-card-content>{{ category.name }}</mat-card-content>
+      <mat-card-actions>
+        <button mat-icon-button matTooltip="Edit Category" (click)="$event.stopPropagation(); openForm(category)">
+          <mat-icon class="edit-icon">edit</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Delete Category" (click)="$event.stopPropagation(); deleteCategory(category)">
+          <mat-icon class="delete-icon">delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

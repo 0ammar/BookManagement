@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>{{ data.book.title }}</h2>
+<mat-dialog-content>
+  <p><strong>Author:</strong> {{ data.book.author }}</p>
+  <p><strong>ISBN:</strong> {{ data.book.isbn }}</p>
+  <p><strong>Publication Date:</strong> {{ data.book.publicationDate | date }}</p>
+  <p><strong>Categories:</strong>
+    <span *ngFor="let category of data.book.categories; last as isLast">
+      {{ category.name }}{{ !isLast ? ', ' : '' }}
+    </span>
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-flat-button color="primary" (click)="close()">Close</button>
+</mat-dialog-actions>
