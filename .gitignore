@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Angular cache
+.angular/
+
+# IDE
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Optional
+package-lock.json
