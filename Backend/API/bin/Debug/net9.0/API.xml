@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="T:API.Controllers.MainController">
+            <summary>
+            Main API controller to manage books and categories.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.#ctor(Application.Interfaces.ICategoryService,Application.Interfaces.IBookService)">
+            <summary>
+            Main API controller to manage books and categories.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.GetBooksByCategoryId(System.Int32)">
+            <summary>
+            Get all books in a specific category by category id
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.GetAllCategories">
+            <summary>
+            Get all categories.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.GetCategoryById(System.Int32)">
+            <summary>
+            Get category by Id.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.AddCategory(Application.DTOs.CategoryDto)">
+            <summary>
+            Add a new category.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.UpdateCategory(System.Int32,Application.DTOs.CategoryDto)">
+            <summary>
+            Update a category by Id.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.DeleteCategory(System.Int32)">
+            <summary>
+            Delete a category by Id.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.GetAllBooksWithCategories">
+            <summary>
+            Get all books with their categories.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.GetBookById(System.Int32)">
+            <summary>
+            Get book by Id.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.AddBookToCategory(System.Int32,Application.DTOs.CreateBookDto)">
+            <summary>
+            Add a new book to a specific category.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.UpdateBook(System.Int32,Application.DTOs.BookDto)">
+            <summary>
+            Update a book by Id.
+            </summary>
+        </member>
+        <member name="M:API.Controllers.MainController.DeleteBook(System.Int32)">
+            <summary>
+            Delete a book by Id.
+            </summary>
+        </member>
+    </members>
+</doc>

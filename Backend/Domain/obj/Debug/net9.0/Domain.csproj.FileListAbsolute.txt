@@ -1,0 +1,13 @@
+C:\Projects\BookManagement\Backend\Domain\bin\Debug\net9.0\Domain.deps.json
+C:\Projects\BookManagement\Backend\Domain\bin\Debug\net9.0\Domain.runtimeconfig.json
+C:\Projects\BookManagement\Backend\Domain\bin\Debug\net9.0\Domain.dll
+C:\Projects\BookManagement\Backend\Domain\bin\Debug\net9.0\Domain.pdb
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.dll
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\refint\Domain.dll
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.pdb
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\Domain.genruntimeconfig.cache
+C:\Projects\BookManagement\Backend\Domain\obj\Debug\net9.0\ref\Domain.dll
